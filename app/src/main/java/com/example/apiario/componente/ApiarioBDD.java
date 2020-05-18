@@ -86,6 +86,7 @@ public class ApiarioBDD {
         openForWrite();
         Cursor c = apiario.rawQuery("select idApiario, name, idUsuario from apiarios where name = '" + name + "'", null);
         return cursorToApiario(c);
+
     }
 
     public ArrayList<Apiario> leerApiarios() {
